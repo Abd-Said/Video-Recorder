@@ -8,7 +8,7 @@ height = int(video_capture.get(4))
 
 now = datetime.now()
 timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
-fourcc = cv2.VideoWriter_fourcc(*'XVID') #choose best type for your code. MPEG , MJPG , H265 , H264 , XVID
+fourcc = cv2.VideoWriter_fourcc(*'MJPG') #choose best type for your code. MPEG , MJPG , H265 , H264 , XVID
 filename = f'Video_{timestamp}.mp4' #change the video forat .avi .mp4 etc.
 video_writer = cv2.VideoWriter(filename , fourcc, 30, (width, height))
 
